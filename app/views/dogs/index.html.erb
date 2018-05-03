@@ -1,0 +1,8 @@
+
+  <body>
+    <h1>List of Dogs</h1>
+    <%= button_to "Add Dog to Employee", new_employee_path, method: "get" %>
+      <% @dogs.each do |dog| %>
+        <p><%= link_to dog.name, dog_path(dog) %></p>
+      <% end %>
+  </body>
